@@ -2,23 +2,19 @@
 
 * [luci-app-ssr-plus](https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-ssr-plus)
 * libs - 
-    * brook
-    * chinadns-ng
-    * dns2socks
-    * ipt2socks
-    * kcptun
-    * ~~openssl1.1~~
-    * pdnsd-alt
+    * **naiveproxy**
     * shadowsocksr-libev
+    * pdnsd-alt
+    * microsocks
+    * dns2socks
     * simple-obfs
-    * ssocks
-    * ~~syncthing~~
-    * ~~trojan~~
-    * trojan-go
-    * trojan-plus
-    * v2ray
+    * tcpping
     * v2ray-plugin
-    * ~~verysync~~
+    * v2ray
+    * trojan
+    * ipt2socks
+    * redsocks2
+    * kcptun
 
 ---
 
