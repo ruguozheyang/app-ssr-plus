@@ -29,6 +29,9 @@ fi
 if [ `grep -c "naiveproxy" .git/info/sparse-checkout` -eq 0 ]; then
     echo "naiveproxy" >> .git/info/sparse-checkout
 fi
+if [ `grep -c "tcping" .git/info/sparse-checkout` -eq 0 ]; then
+    echo "tcping" >> .git/info/sparse-checkout
+fi
 git pull --depth 1 origin master
 
 # git 同步 coolsnowwolf/lede 源码
@@ -43,14 +46,13 @@ cd $tmp_path/lean
 if [ ! -e .git/info/sparse-checkout ]; then
     touch .git/info/sparse-checkout
 fi
-# naiveproxy 不在 lean 库中, kenzok8 的搬运库中有收录
+# naiveproxy, tcping 不在 lean 库中, kenzok8 的搬运库中有收录
 array_libs=(
 shadowsocksr-libev
 pdnsd-alt
 microsocks
 dns2socks
 simple-obfs
-tcpping
 v2ray-plugin
 v2ray
 trojan
@@ -75,8 +77,12 @@ fi
 if [ -d $project_root_path/naiveproxy ]; then
     rm -rf $project_root_path/naiveproxy
 fi
+if [ -d $project_root_path/tcping ]; then
+    rm -rf $project_root_path/tcping
+fi
 cp -R $tmp_path/kenzok8_packages/luci-app-ssr-plus $project_root_path/
 cp -R $tmp_path/kenzok8_packages/naiveproxy $project_root_path/
+cp -R $tmp_path/kenzok8_packages/tcping $project_root_path/
 
 # libs 同步更新
 for var in ${array_libs[*]}
