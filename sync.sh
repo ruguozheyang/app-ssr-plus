@@ -53,8 +53,8 @@ pdnsd-alt
 microsocks
 dns2socks
 simple-obfs
-v2ray-plugin
 v2ray
+v2ray-plugin
 trojan
 ipt2socks
 redsocks2

@@ -3,14 +3,15 @@
 * [luci-app-ssr-plus](https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-ssr-plus)
 * libs - 
     * **naiveproxy**
+    * **tcping**
     * shadowsocksr-libev
     * pdnsd-alt
     * microsocks
     * dns2socks
     * simple-obfs
     * tcpping
-    * v2ray-plugin
     * v2ray
+    * v2ray-plugin
     * trojan
     * ipt2socks
     * redsocks2
